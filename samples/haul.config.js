@@ -1,7 +1,9 @@
-import { createWebpackConfig } from "haul";
+import { withPolyfills, makeConfig } from "@haul-bundler/preset-0.60";
 
-export default {
-  webpack: createWebpackConfig(({ platform }) => ({
-    entry: `./index.js`
-  }))
-};
+export default makeConfig({
+  bundles: {
+    index: {
+      entry: withPolyfills('./index'),
+    },
+  },
+});

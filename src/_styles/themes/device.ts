@@ -1,4 +1,4 @@
-import { Dimensions, NativeModules, Platform } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 
 const X_WIDTH = 375;
 const X_HEIGHT = 812;

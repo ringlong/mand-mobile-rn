@@ -7,9 +7,10 @@
  */
 
 import React from 'react'
+import { LogBox } from 'react-native'
 import AppNavigator from './navigation/root-navigator'
 
-console.disableYellowBox = true;
+LogBox.ignoreAllLogs();
 
 export default class App extends React.Component {
   render() {

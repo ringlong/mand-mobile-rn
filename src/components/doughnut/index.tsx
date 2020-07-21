@@ -1,9 +1,9 @@
+import * as ART from '@react-native-community/art';
 import * as React from 'react';
 // @ts-ignore
 import * as RART from 'react-art';
 import {
   Animated,
-  ART,
   Easing,
   EasingFunction,
   Platform,

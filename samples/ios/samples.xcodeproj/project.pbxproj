@@ -184,7 +184,6 @@
 				94D68A7021AEAF920010B5D2 /* Resources */,
 				9433E47321F96C69003195B1 /* Bundle React Native code and images */,
 				A1AC0A3AC32CE04E8713A6D2 /* [CP] Copy Pods Resources */,
-				CAA62FA8C3911D45CE0F1D79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,7 +273,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+			shellScript = "export CLI_PATH=node_modules/@haul-bundler/cli/bin/haul.js\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		A1AC0A3AC32CE04E8713A6D2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -284,75 +283,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-samples/Pods-samples-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-samples/Pods-samples-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/fonts/DIN Medium.ttf",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/fonts/FD+_Number.otf",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/fonts/Localizable.strings",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/fonts/mand-mobile.ttf",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/fonts/selection.json",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_ic_stepper_add.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_ic_stepper_add@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_ic_stepper_sub.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_ic_stepper_sub@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_arrow@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_blue_icon@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_navi_back@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_original_default@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_original_select@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_take_picture@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_unselect@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_image_picker_unselect_gray@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_keyboard_delete@2x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_keyboard_delete@3x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_keyboard_pack @3x.png",
-				"${PODS_ROOT}/../../node_modules/mand-mobile-rn/src/assets/image/md_keyboard_pack@2x.png",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-samples/Pods-samples-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-samples/Pods-samples-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CAA62FA8C3911D45CE0F1D79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-samples/Pods-samples-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-samples/Pods-samples-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

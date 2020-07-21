@@ -1,4 +1,8 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+// import { createStackNavigator, createAppContainer } from 'react-navigation'
 import { HomeScreen } from '../screen/home'
 import { IconScreen } from '../screen/basic/icon'
 import { ButtonScreen } from '../screen/basic/button'
@@ -217,13 +221,30 @@ const rootRoutesConfig = {
   /* @init<%  ${componentName}: { screen: ${componentName}Screen },%> */
 }
 
-export default createAppContainer(
-  createStackNavigator(rootRoutesConfig, {
-    initialRouteName: 'Home',
-    navigationOptions: {
-      title: 'Mand Mobile RN',
-      gesturesEnabled: true,
-    },
-    headerMode: 'screen',
-  }),
-)
+const Stack = createStackNavigator();
+
+function RootStack() {
+  const screens = Object.keys(rootRoutesConfig).map(key => {
+    const component = rootRoutesConfig[key].screen;
+    return (
+      <Stack.Screen name={key} component={component} options={{ title: key }} />
+    );
+  });
+  return (
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{ gestureEnabled: true }}
+    >
+      {screens}
+    </Stack.Navigator>
+  );
+}
+
+export default function App() {
+  const rootStack = RootStack();
+  return (
+    <NavigationContainer>
+      {rootStack}
+    </NavigationContainer>
+  );
+}
