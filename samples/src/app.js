@@ -12,8 +12,8 @@ import AppNavigator from './navigation/root-navigator'
 
 LogBox.ignoreAllLogs();
 
-export default class App extends React.Component {
-  render() {
-    return <AppNavigator />
-  }
+const App =  () => {
+  return <AppNavigator />
 }
+
+export default App;
