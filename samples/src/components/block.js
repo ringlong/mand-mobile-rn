@@ -32,12 +32,12 @@ export class Block extends React.Component {
             </Text>
             <Text style={styles.blockTitleCn}>{this.props.ccname}</Text>
           </View>
-          <MDIcon
+          {/* <MDIcon
             style={styles.blockTitleIcon}
             name={iconName}
             color="#333"
             size={22}
-          />
+          /> */}
         </TouchableOpacity>
         {list}
       </View>

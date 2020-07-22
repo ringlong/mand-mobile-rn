@@ -1,7 +1,8 @@
 import * as React from 'react';
 // @ts-ignore
 import * as RART from 'react-art';
-import { ART, Platform } from 'react-native';
+import * as ART from '@react-native-community/art';
+import { Platform } from 'react-native';
 
 // @ts-ignore
 const { Shape, Path, Group } = Platform.OS === 'web' ? RART : ART;

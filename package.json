@@ -30,6 +30,7 @@
     "svg2obj": "./build/svg2obj.js"
   },
   "dependencies": {
+    "@react-native-community/art": "^1.2.0",
     "glob": "^7.1.3",
     "react-art": "^16.8.6",
     "react-native-animatable": "^1.3.2",
@@ -37,7 +38,7 @@
     "react-native-modal": "^9.0.0",
     "react-native-svg": "9.4.0",
     "react-native-svg-uri": "^1.2.3",
-    "react-native-vector-icons": "^6.4.2"
+    "react-native-vector-icons": "^7.0.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.9.1",
@@ -66,7 +67,7 @@
     "inquirer": "^6.3.1",
     "jest": "^24.7.1",
     "jsdom": "14.0.0",
-    "metro-react-native-babel-preset": "^0.53.1",
+    "metro-react-native-babel-preset": "^0.59.0",
     "moment": "^2.24.0",
     "prettier": "^1.17.0",
     "prettier-tslint": "^0.4.2",
@@ -74,7 +75,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.4",
-    "react-native": "^0.59.4",
+    "react-native": ">=0.60.0",
     "react-native-mock-render": "^0.1.2",
     "react-native-typescript-transformer": "^1.2.12",
     "react-native-web": "^0.11.2",

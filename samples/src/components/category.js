@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import { MDIcon } from 'mand-mobile-rn'
+// import { MDIcon } from 'mand-mobile-rn'
 
 export class Category extends React.Component {
   render() {
@@ -17,12 +17,12 @@ export class Category extends React.Component {
           <Text style={styles.categoryItemInner}>
             {item.name} - {item.ccname}
           </Text>
-          <MDIcon
+          {/* <MDIcon
             style={styles.blockTitleIcon}
             name="arrow-right"
             color="#333"
             size={12}
-          />
+          /> */}
         </TouchableOpacity>
       ))
 
