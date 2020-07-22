@@ -1,11 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Text } from 'react-native';
-import { View } from 'react-native-animatable';
+import { Text, View } from 'react-native';
 
-// import { createStackNavigator, createAppContainer } from 'react-navigation'
-// import { HomeScreen } from '../screen/home'
+import { HomeScreen } from '../screen/home'
 // import { IconScreen } from '../screen/basic/icon'
 // import { ButtonScreen } from '../screen/basic/button'
 // import { AmountScreen } from '../screen/business/amount'
@@ -242,21 +240,20 @@ const Stack = createStackNavigator();
 //   );
 // }
 
-const HomeScreen = () => {
-  return (
-    <View>
-      <Text>222222222222222</Text>
-    </View>
-  )
-}
+// function HomeScreen() {
+//   return (
+//     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+//       <Text>Home Screen</Text>
+//     </View>
+//   );
+// }
 
 export default function App() {
   // const rootStack = RootStack();
   return (
     <NavigationContainer>
-      {/* {rootStack} */}
       <Stack.Navigator initialRouteName='Home' screenOptions={{ gestureEnabled: true }}>
-        <Stack.screen name='Home' component={HomeScreen} options={{ title: 'Home' }} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
